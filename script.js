@@ -1,5 +1,5 @@
 const poke_container = document.getElementById('poke_container');
-const pokemons_number = 493;
+const pokemons_number = 10249;
 const colors = {
   fire: '#FDDFDF',
 	grass: '#DEFDE0',
@@ -45,7 +45,8 @@ function createPokemonCard(pokemon){
   
   const pokeInnerHTML = `
   <div class ="img-container">
-    <img src="https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png"/>
+    <img style="width:50%" src="node_modules/pokemon-sprites/sprites/pokemon/other/home/${pokemon.id}.png"/>
+    
    </div>
   <div class="info">
       <span class="number">#${pokemon.id.toString().padStart(3,'0')}</span>
